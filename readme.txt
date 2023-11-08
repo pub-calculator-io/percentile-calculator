@@ -2,7 +2,7 @@
 Contributors: calculatorio
 Tags: 
 Requires at least: 5.0
-Tested up to: 6.3.0
+Tested up to: 6.4.0
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,6 +12,12 @@ The percentile calculator helps to find percentile values for a data set. Use th
 == Description ==
 
 The percentile calculator helps to find percentile values for a data set. Use this percentile calculator to create a table listing each 5th percentile
+
+__Shortcode__
+
+Use the Percentile Calculator shortcode:
+
+`[ci_percentile_calculator]`
 
 Libraries in use:
 1. https://mathjs.org/
@@ -25,8 +31,11 @@ Libraries in use:
 
 1. Upload the /ci_percentile_calculator/ folder to the /wp-content/plugins/ directory.
 2. Activate the [Percentile Calculator](https://www.calculator.io/percentile-calculator/ "Percentile Calculator Homepage") plugin through the "Plugins" menu in WordPress.
-3. Configure your settings via Appearance > Widgets > Percentile Calculator.
-4. And you're good to go!
+
+== Usage ==
+* Add the shortcode `[ci_percentile_calculator]` to your page or post and configure default mortgage parameters.
+* If you are using widgets, just add the Percentile Calculator to the sidebar through the `Appearance -> Widgets -> Percentile Calculator` menu in WordPress.
+* Add the following code: `<?php display_ci_percentile_calculator(); ?>` to your template where you would like the Percentile Calculator to appear.
 
 == Screenshots ==
 1. The Percentile Calculator Input Form.
