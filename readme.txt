@@ -13,6 +13,8 @@ The percentile calculator helps to find percentile values for a data set. Use th
 
 The percentile calculator helps to find percentile values for a data set. Use this percentile calculator to create a table listing each 5th percentile
 
+[Percentile Calculator Homepage](https://www.calculator.io/percentile-calculator/ "Percentile Calculator Homepage")
+
 __Shortcode__
 
 Use the Percentile Calculator shortcode:
