@@ -1,4 +1,4 @@
-# Percentile Calculator WordPress Widget by [Calculator.iO](https://www.calculator.io/ "Calculator.iO Homepage")
+# Percentile Calculator Widget for WordPress
 
 The percentile calculator helps to find percentile values for a data set. Use this percentile calculator to create a table listing each 5th percentile
 
