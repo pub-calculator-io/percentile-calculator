@@ -1,4 +1,4 @@
-=== Percentile Calculator ===
+=== Percentile Calculator by www.calculator.io ===
 Contributors: calculatorio
 Tags: percentile, calculate percentile, percentile calculator online, percentile rank calculator, percentile formula, how to calculate percentile, find percentile, percentile calculation, percentile score calculator, percentile table
 Requires at least: 5.0

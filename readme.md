@@ -7,7 +7,7 @@ The percentile calculator helps to find percentile values for a data set. Use th
 
 ## Installation
 
-1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+1. [Download](https://github.com/pub-calculator-io/percentile-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
 2. Upload the /percentile-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Percentile Calculator](https://www.calculator.io/percentile-calculator/ "Percentile Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
