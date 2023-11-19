@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Percentile Calculator by www.calculator.io
+Plugin Name: CI Percentile calculator
 Plugin URI: https://www.calculator.io/percentile-calculator/
 Description: The percentile calculator helps to find percentile values for a data set. Use this percentile calculator to create a table listing each 5th percentile
 Version: 1.0.0
