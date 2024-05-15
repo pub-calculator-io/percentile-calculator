@@ -28,14 +28,27 @@
             <div class="calculator-setting" id="calculator_form">
                 <div class="calculator-content col">
                 	<div class="input-wrapper row">
-                		<label class="input col  ">
+                		<label class="input col ">
                 			<p class="input__title">Data Set</p>
                 			<div class="input-field row">
                 				
-                				<input type="text" class="input-field__input" placeholder="" id="data_set" value="10, 2, 38, 23, 38, 23, 21, 234" />
+                				<textarea name="data_set" id="data_set"" class="input-field__input input-field__input--textarea" placeholder="" ">10, 2, 38, 23, 38, 23, 21, 234</textarea>
                 				
                 			</div>
-                		</label>	</div>
+                			<div class="input-hints row">
+                				<span class="input-hints__hint input-hints__hint--comma">Comma or space-separated numbers</span>
+                			</div>
+                			<script>
+                				document.querySelectorAll('.input-field__input--textarea').forEach((input) => {
+                					input.addEventListener('input', (e) => {
+                						input.style.height = "40px"
+                						let scrollHeight = e.target.scrollHeight
+                						input.style.height = scrollHeight + "px"
+                					})
+                				})
+                			</script>
+                		</label>
+                	</div>
                 	<div class="input-wrapper row">
                 		<label class="input col  ">
                 			<p class="input__title">Percentile</p>
@@ -52,13 +65,15 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -73,11 +88,10 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col">
 	<p class="table-cell table-cell--dark table-cell--only-title">Answer</p>
-	<div class="table-cell row">
+	<div class="table-cell row animate">
 		<p class="result-text" id="result_text">
 			The 15th Percentile is 10.55
 		</p>
@@ -87,75 +101,75 @@
 			<thead>
 			<tr>
 				<th>0th</th>
-				<td id="perc_0">2</td>
+				<td id="perc_0" class="animate">2</td>
 				<th>45th</th>
-				<td id="perc_45">23</td>
-				<th>90</th>
-				<td id="perc_90">96.8</td>
+				<td id="perc_45" class="animate">23</td>
+				<th>90th</th>
+				<td id="perc_90" class="animate">96.8</td>
 			</tr>
 			</thead>
 			<tbody>
 			<tr>
 				<th>5th</th>
-				<td id="perc_5">4.8</td>
+				<td id="perc_5" class="animate">4.8</td>
 				<th>50th</th>
-				<td id="perc_50">23</td>
+				<td id="perc_50" class="animate">23</td>
 				<th>95th</th>
-				<td id="perc_95">165.4</td>
+				<td id="perc_95" class="animate">165.4</td>
 			</tr>
 			<tr>
 				<th>10th</th>
-				<td id="perc_10">7.6</td>
+				<td id="perc_10" class="animate">7.6</td>
 				<th>55th</th>
-				<td id="perc_55">23</td>
+				<td id="perc_55" class="animate">23</td>
 				<th>100th</th>
-				<td id="perc_100">234</td>
+				<td id="perc_100" class="animate">234</td>
 			</tr>
 			<tr>
 				<th>15th</th>
-				<td id="perc_15">10.55</td>
+				<td id="perc_15" class="animate">10.55</td>
 				<th>60th</th>
-				<td id="perc_60">26</td>
+				<td id="perc_60" class="animate">26</td>
 				<th></th>
 				<td></td>
 			</tr>
 			<tr>
 				<th>20th</th>
-				<td id="perc_20">14.4</td>
+				<td id="perc_20" class="animate">14.4</td>
 				<th>65th</th>
-				<td id="perc_65">31.25</td>
+				<td id="perc_65" class="animate">31.25</td>
 				<th></th>
 				<td></td>
 			</tr>
 			<tr>
 				<th>25th</th>
-				<td id="perc_25">18.25</td>
+				<td id="perc_25" class="animate">18.25</td>
 				<th>70th</th>
-				<td id="perc_70">36.5</td>
+				<td id="perc_70" class="animate">36.5</td>
 				<th></th>
 				<td></td>
 			</tr>
 			<tr>
 				<th>30th</th>
-				<td id="perc_30">21.2</td>
+				<td id="perc_30" class="animate">21.2</td>
 				<th>75th</th>
-				<td id="perc_75">38</td>
+				<td id="perc_75" class="animate">38</td>
 				<th></th>
 				<td></td>
 			</tr>
 			<tr>
 				<th>35th</th>
-				<td id="perc_35">21.9</td>
+				<td id="perc_35" class="animate">21.9</td>
 				<th>80th</th>
-				<td id="perc_80">38</td>
+				<td id="perc_80" class="animate">38</td>
 				<th></th>
 				<td></td>
 			</tr>
 			<tr>
 				<th>40th</th>
-				<td id="perc_40">22.6</td>
+				<td id="perc_40" class="animate">22.6</td>
 				<th>85th</th>
-				<td id="perc_85">38</td>
+				<td id="perc_85" class="animate">38</td>
 				<th></th>
 				<td></td>
 			</tr>

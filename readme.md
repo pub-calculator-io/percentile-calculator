@@ -3,7 +3,6 @@
 The percentile calculator helps to find percentile values for a data set. Use this percentile calculator to create a table listing each 5th percentile
 
 ![Percentile Calculator Input Form](/assets/images/screenshot-1.png "Percentile Calculator Input Form")
-![Percentile Calculator Calculation Results](/assets/images/screenshot-2.png "Percentile Calculator Calculation Results")
 
 ## Installation
 

@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Percentile Calc
 == Screenshots ==
 
 1. The Percentile Calculator Input Form.
-2. The Percentile Calculator Calculation Results.
 
 == Installation ==
 

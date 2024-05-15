@@ -16,8 +16,8 @@ function calculate() {
 		_("perc_" + key).innerHTML = percentilesData[key];
 	});
 
-	output.val('The 15th Percentile is 10.55')
-		.replace('15th', numberSuffix(percentile))
+	output.val('The {15} Percentile is 10.55')
+		.replace('{15}', numberSuffix(percentile))
 		.replace('10.55', result).set('result_text');
 }
 
